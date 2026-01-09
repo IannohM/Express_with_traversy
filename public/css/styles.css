@@ -1,0 +1,110 @@
+/* styles.css - Redesigned: Elegant, static, animation-free */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(
+        circle at center,
+        #a8edea 0%,
+        #fed6e3 50%,
+        #d299e8 100%
+    );
+    color: #333;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 900px;
+    padding: 80px 60px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-radius: 32px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15),
+        inset 0 0 20px rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    text-align: center;
+}
+
+h1 {
+    font-size: 5.5rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #2d1b69;
+    letter-spacing: -0.02em;
+}
+
+.subtitle {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 40px;
+    color: #4a3780;
+    opacity: 0.9;
+}
+
+p {
+    font-size: 1.4rem;
+    line-height: 1.9;
+    margin-bottom: 32px;
+    color: #555;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.highlight {
+    font-weight: 600;
+    color: #2d1b69;
+}
+
+.btn {
+    display: inline-block;
+    padding: 18px 48px;
+    background: rgba(255, 255, 255, 0.3);
+    color: #2d1b69;
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-decoration: none;
+    border-radius: 60px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(8px);
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.6);
+    transform: translateY(-4px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 60px 40px;
+        margin: 20px;
+        border-radius: 24px;
+    }
+    h1 {
+        font-size: 4rem;
+    }
+    .subtitle {
+        font-size: 1.6rem;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+    .btn {
+        padding: 16px 40px;
+        font-size: 1.2rem;
+    }
+}
